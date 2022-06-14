@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@200&family=Roboto:wght@100;300;400;500;900&family=Smooch+Sans&family=Work+Sans:wght@100;200;300;400;500&display=swap");
+.about {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+.underline{
+	margin-top: 100px;
+	width: 100%;
+	height: 50px;
+	background-color:#59b256;
+}
+.a-left {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	height: 100%;
+	width: 100%;
+}
+.a-right {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	position: relative;
+}
+.a-right p {
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
+}
+.lang-img{
+	width: 170px;
+	height: 150px;
+	padding: 15px;
+	margin-right: 5px;
+	animation: mymove 6s infinite;
+}
+@keyframes mymove{
+	50%{transform: rotateY(360deg)}
+}
+.a-card {
+	width: 70%;
+	height: 90vh;
+	border-radius: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: absolute;
+	overflow: hidden;
+	border-radius: 50px;
+}
+
+.a-card.bg {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	background-color: #333;
+}
+.a-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.a-award-img {
+	width: 120px;
+	height: 120px;
+	border-radius: 30px;
+	position: absolute;
+}
+.a-award {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.a-sub {
+	margin: 20px 0;
+}
+.a-award-text {
+	width: 70%;
+	margin: 70px;
+}
+.a-award-desc {
+	width: 70%;
+	margin-left: 130px;
+}
+.i-bgc {
+	clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 48%, 0% 0%);
+	background-color: #7eb87e;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+}
+.a-award-title {
+	font-weight: bold;
+	color: #555;
+	margin-bottom: 10px;
+	margin-left: 130px;
+}
+
+
+@media screen and (max-width: 480px) {
+	.about {
+		margin-top: 50px;
+		flex-direction: column;
+		text-align: center;
+	}
+	.a-left {
+		width: 100%;
+	}
+	.a-card {
+		height: 30vh;
+	}
+	.a-title {
+		margin-bottom: 20px;
+	}
+	.a-card.bg,
+	.a-award,.underline {
+		display: none;
+	}
+	.a-card {
+		width: 100%;
+		height: 45vh;
+	}
+	.lang-img{
+		width: 100px;
+		height: 100px;
+	}
+}
