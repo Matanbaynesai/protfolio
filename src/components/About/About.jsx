@@ -8,13 +8,13 @@ export const About = () => {
 			<div className="a-left">
 				<div className="a-card">
 						{langImages.map((item) => {
-							return <img className="lang-img" src={item.img} alt={item.id} />;
+							return <img key={item.id} className="lang-img" src={item.img} alt={item.id} />;
 						})}
 				</div>
 			</div>
 			<div className="a-right">
 				<h1 className="a-title">About Me</h1><br/>
-				<p className="a-desc">
+				<div className="a-desc">
 					<h3>Tech Career Technology Center 2021</h3>
 					<br/>
 					Graduate of intense ten month basic training and skills course,
@@ -31,7 +31,7 @@ export const About = () => {
 						lecturers can upload, homework, learning topics, and learning
 						content where students can browse comfortably and easily.
 					</ul>
-				</p>
+				</div>
 				<div className="underline"></div>
 			</div>
 		</div>

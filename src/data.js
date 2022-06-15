@@ -46,12 +46,12 @@ export  const langImages = [
         link:""
     },
     {
-        id:6,
+        id:7,
         img:"https://www.svgrepo.com/show/303232/mongodb-logo.svg",
         link:""
     },
     {
-        id:6,
+        id:8,
         img:"https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/1280px-Sass_Logo_Color.svg.png",
         link:""
     }
